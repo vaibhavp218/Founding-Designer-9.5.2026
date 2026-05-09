@@ -306,10 +306,9 @@
 
 .transform-cta__submit-dots {
   width: 4.6px;
-  height: 41.4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .transform-cta__submit-dots span {
