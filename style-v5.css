@@ -437,7 +437,7 @@
 .site-footer__social-icon {
   width: 34.25px;
   height: 34.25px;
-  padding: 8px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,8 +447,8 @@
 }
 
 .site-footer__social-icon img {
-  width: 17.125px;
-  height: 17.125px;
+  width: 34.25px;
+  height: 34.25px;
   display: block;
 }
 
@@ -1180,7 +1180,7 @@
   }
 
   .engagement {
-    background: #fafafa;
+    background: #F8F4EC;
   }
 
   .engagement__inner {
