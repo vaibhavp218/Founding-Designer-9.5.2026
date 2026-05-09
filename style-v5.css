@@ -1065,7 +1065,7 @@
     display: none;
   }
 
-  .portfolio__view-all {
+  .portfolio__header .cta {
     display: none;
   }
 
@@ -2307,7 +2307,7 @@
     display: none;
   }
 
-  .portfolio__view-all {
+  .portfolio__header .cta {
     display: none;
   }
 

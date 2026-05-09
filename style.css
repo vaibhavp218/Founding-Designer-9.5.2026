@@ -794,17 +794,8 @@ button {
   color: var(--dark);
 }
 
-.portfolio__view-all {
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--orange);
-  white-space: nowrap;
+.portfolio__header .cta {
   flex-shrink: 0;
-}
-
-.portfolio__view-all:hover {
-  opacity: 0.8;
 }
 
 /* Card grid — 3 equal columns, 16px gap */
