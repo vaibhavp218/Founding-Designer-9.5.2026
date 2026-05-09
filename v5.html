@@ -647,10 +647,12 @@
           <em>Your Product?</em>
         </h2>
 
-        <form class="transform-cta__form" action="#" method="post">
+        <form class="transform-cta__form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="4387ee0a-39f5-4481-a114-1587c998a5b7">
+          <input type="hidden" name="subject" value="New lead from Founding Designer Website">
           <label class="transform-cta__label" for="transform-email">Drop your email ID &amp; just sit tight!</label>
           <div class="transform-cta__field">
-            <input id="transform-email" class="transform-cta__input" type="email" name="email" placeholder="Your email address" autocomplete="email">
+            <input id="transform-email" class="transform-cta__input" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
             <button class="transform-cta__submit" type="submit">
               <span class="transform-cta__submit-dots" aria-hidden="true">
                 <span></span>
