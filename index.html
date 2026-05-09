@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Founding Designer — v5</title>
   <meta name="description" content="A UI/UX Design Studio that turns ideas into interfaces. We design zero-to-one experiences that scale for startups and enterprises.">
+  <link rel="preload" href="Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="Merriweather/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-v2.css">
   <link rel="stylesheet" href="style-v5.css?v=launch-3">
@@ -27,9 +29,9 @@
       <div class="header__right">
         <nav class="header__nav" aria-label="Main navigation">
           <a href="#why-us" class="header__nav-link" id="nav-why-us">Why Us</a>
-          <a href="#blog" class="header__nav-link" id="nav-blog">Blog</a>
+          <a href="https://www.linkedin.com/in/riddhi-shree-joshi-92b09b100" class="header__nav-link" id="nav-blog" target="_blank" rel="noopener">Blog</a>
           <a href="#portfolio" class="header__nav-link" id="nav-portfolio">Portfolio</a>
-          <a href="https://www.behance.net" class="header__nav-link" id="nav-behance" target="_blank" rel="noopener">Behance</a>
+          <a href="https://www.behance.net/riddhishree" class="header__nav-link" id="nav-behance" target="_blank" rel="noopener">Behance</a>
         </nav>
 
         <div class="cta cta--sm">
@@ -68,9 +70,9 @@
 
           <nav class="mobile-menu__nav" aria-label="Mobile navigation">
             <a href="#why-us">Why us</a>
-            <a href="#blog">Blog</a>
+            <a href="https://www.linkedin.com/in/riddhi-shree-joshi-92b09b100" target="_blank" rel="noopener">Blog</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+            <a href="https://www.behance.net/riddhishree" target="_blank" rel="noopener">Behance</a>
           </nav>
         </div>
 
@@ -89,8 +91,8 @@
 
           <div class="mobile-menu__socials" aria-label="Social links">
             <a href="#">Twitter (x)</a>
-            <a href="#">Linkedin</a>
-            <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+            <a href="https://www.linkedin.com/in/riddhi-shree-joshi-92b09b100" target="_blank" rel="noopener">Linkedin</a>
+            <a href="https://www.behance.net/riddhishree" target="_blank" rel="noopener">Behance</a>
           </div>
 
           <p class="mobile-menu__copyright">Copyright, Founding Designer, 2026</p>
@@ -373,14 +375,24 @@
       <!-- Header row -->
       <div class="portfolio__header">
         <h2 class="portfolio__heading"><span class="portfolio__heading-primary">Problems we've chosen</span> to<br> show up for</h2>
-        <a href="#" class="portfolio__view-all">View All</a>
+        <div class="cta">
+          <div class="cta__dots">
+            <span class="cta__dot"></span>
+            <span class="cta__dot"></span>
+          </div>
+          <a href="https://www.behance.net/riddhishree" class="cta__btn cta__btn--primary" target="_blank" rel="noopener">View All</a>
+          <div class="cta__dots">
+            <span class="cta__dot"></span>
+            <span class="cta__dot"></span>
+          </div>
+        </div>
       </div>
 
       <!-- Card grid -->
       <div class="portfolio__grid">
 
         <!-- Finova -->
-        <div class="portfolio__card">
+        <div class="portfolio__card" style="cursor:pointer;" onclick="window.open('https://www.behance.net/gallery/207461021/Wealth-Management-Dashboard','_blank','noopener')" role="link" tabindex="0">
           <div class="portfolio__card-body">
             <h3 class="portfolio__card-title">Finova</h3>
             <p class="portfolio__card-desc">Simplifying financial decision-making through AI-powered insights and guidance.</p>
@@ -398,7 +410,7 @@
         </div>
 
         <!-- Questo -->
-        <div class="portfolio__card portfolio__card--questo">
+        <div class="portfolio__card portfolio__card--questo" style="cursor:pointer;" onclick="window.open('https://www.behance.net/gallery/214834811/Questo-UIUX-Case-Study','_blank','noopener')" role="link" tabindex="0">
           <div class="portfolio__card-body">
             <h3 class="portfolio__card-title">Questo</h3>
             <p class="portfolio__card-desc">Streamlining resale through intuitive buying and selling experiences.</p>
@@ -416,7 +428,7 @@
         </div>
 
         <!-- Aero Buzz -->
-        <div class="portfolio__card portfolio__card--aerobuzz">
+        <div class="portfolio__card portfolio__card--aerobuzz" style="cursor:pointer;" onclick="window.open('https://www.behance.net/gallery/213685905/AERO-BUZZ-DRONE-UI','_blank','noopener')" role="link" tabindex="0">
           <div class="portfolio__card-body">
             <h3 class="portfolio__card-title">Aero Buzz</h3>
             <p class="portfolio__card-desc">Enhancing flight control and decision-making through clear, real-time data access.</p>
@@ -647,10 +659,12 @@
           <em>Your Product?</em>
         </h2>
 
-        <form class="transform-cta__form" action="#" method="post">
+        <form class="transform-cta__form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="4387ee0a-39f5-4481-a114-1587c998a5b7">
+          <input type="hidden" name="subject" value="New lead from Founding Designer Website">
           <label class="transform-cta__label" for="transform-email">Drop your email ID &amp; just sit tight!</label>
           <div class="transform-cta__field">
-            <input id="transform-email" class="transform-cta__input" type="email" name="email" placeholder="Your email address" autocomplete="email">
+            <input id="transform-email" class="transform-cta__input" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
             <button class="transform-cta__submit" type="submit">
               <span class="transform-cta__submit-dots" aria-hidden="true">
                 <span></span>
@@ -697,11 +711,11 @@
               <span class="site-footer__social-icon"><img src="Twitter profile.svg" alt=""></span>
               <span>Twitter (x)</span>
             </a>
-            <a class="site-footer__social" href="#" aria-label="LinkedIn">
+            <a class="site-footer__social" href="https://www.linkedin.com/in/riddhi-shree-joshi-92b09b100" target="_blank" rel="noopener" aria-label="LinkedIn">
               <span class="site-footer__social-icon"><img src="Linkedin icon.svg" alt=""></span>
               <span>Linkedin</span>
             </a>
-            <a class="site-footer__social" href="#" aria-label="Behance">
+            <a class="site-footer__social" href="https://www.behance.net/riddhishree" target="_blank" rel="noopener" aria-label="Behance">
               <span class="site-footer__social-icon"><img src="BEhgance icon.svg" alt=""></span>
               <span>Behance</span>
             </a>
@@ -716,5 +730,15 @@
 
   <script src="lottie.min.js"></script>
   <script src="script.js?v=launch-3"></script>
+
+  <!-- !! CURSOR WIDGET EXPERIMENT — remove the 1 line below + cursor-widget.js to revert !! -->
+  <script src="cursor-widget.js" defer></script>
+  <!-- !! END CURSOR WIDGET EXPERIMENT !! -->
+
+  <!-- !! GSAP EXPERIMENT — remove the 3 lines below + gsap-experiments.js to revert !! -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="gsap-final.js" defer></script>
+  <!-- !! END GSAP EXPERIMENT !! -->
 </body>
 </html>
