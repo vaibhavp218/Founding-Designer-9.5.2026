@@ -28,6 +28,7 @@ gsap.from(".engagement__card--cobuild", {
   scrollTrigger: {
     trigger: ".engagement",
     start: "top 75%",
+    toggleActions: "play none none reset"
   },
   x: -80,
   opacity: 0,
@@ -39,6 +40,7 @@ gsap.from(".engagement__card--fixed", {
   scrollTrigger: {
     trigger: ".engagement",
     start: "top 75%",
+    toggleActions: "play none none reset"
   },
   x: 80,
   opacity: 0,
@@ -48,6 +50,7 @@ gsap.from(".engagement__card--fixed", {
 });
 
 // ── Experiment 4: Hero — scrubbed parallax exit sequence ──
+// scrub handles its own bidirectional state — no toggleActions needed
 const heroTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero",
@@ -70,6 +73,7 @@ const valuesTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".values__grid",
     start: "top 70%",
+    toggleActions: "play none none reset"
   }
 });
 valuesTl
@@ -84,6 +88,7 @@ gsap.from(".portfolio__card", {
   scrollTrigger: {
     trigger: ".portfolio__grid",
     start: "top 80%",
+    toggleActions: "play none none reset"
   },
   y: 50,
   opacity: 0,
