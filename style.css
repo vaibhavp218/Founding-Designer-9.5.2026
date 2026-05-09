@@ -813,7 +813,10 @@ button {
   overflow: hidden;
   height: 523px;
   padding: 28px 20px;
-  /* no border, no shadow — per Figma */
+}
+
+.portfolio__card:hover {
+  box-shadow: 0 0 2.5px rgba(0,0,0,0.1);
 }
 
 /* Text sits in normal flow at top, above image */
