@@ -533,7 +533,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.mobile-menu__nav a, .mobile-menu__cta-link');
 
   function toggleMenu() {
-    if(mobileMenu) { mobileMenu.classList.toggle('is-open'); }
+    if(mobileMenu) mobileMenu.classList.toggle('is-open');
+    if(menuToggle) menuToggle.classList.toggle('is-active');
   }
 
   if(menuToggle) menuToggle.addEventListener('click', toggleMenu);
