@@ -2460,6 +2460,9 @@
   height: 100% !important;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .launch-loader { background-color: #FAFAFA; }
+}
 
 /* Mobile Menu */
 .mobile-menu { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9998; pointer-events: none; visibility: hidden; background: rgba(0,0,0,0.4); opacity: 0; transition: opacity 0.3s ease, visibility 0.3s ease; }
